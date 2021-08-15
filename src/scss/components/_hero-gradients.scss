@@ -1,0 +1,23 @@
+.hero-gradient {
+    position: absolute;
+    top: 0;
+    right: -60px;
+    height: 120vh;
+    width: 30vw;
+
+    @media (max-width: 1500px) {
+        right: -30px;
+        width: 50vw;
+    }
+
+    @media (max-width: 1024px) {
+        right: -10px;
+        width: 80vw;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        right: -20px;
+    }
+}

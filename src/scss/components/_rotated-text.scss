@@ -1,0 +1,30 @@
+.rotated-text {
+    position: absolute;
+    transform: rotateZ(-90deg);
+    @media (max-width: 1650px) {
+        display: none;
+    }
+}
+
+.coaching-rotated-text {
+    transform-origin: 100% 100%;
+    right: 50px;
+}
+
+.workshop-rotated-text {
+    transform-origin: 100% 100%;
+    right: 50px;
+    top: 500px;
+}
+
+.homepage-rotated-text-right {
+    transform-origin: 100% 100%;
+    right: 50px;
+    top: 100px;
+}
+.homepage-rotated-text-left {
+    transform-origin: 0% 0%;
+    left: 50px;
+    top: 200px;
+
+}

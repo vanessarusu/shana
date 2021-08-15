@@ -1,0 +1,26 @@
+#homepageHero {
+    position: relative;
+    .shana-homepage-hero-headshot {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 50%;
+        max-width: 813px;
+        @media (max-width: 1024px) {
+
+            left: 0;
+            margin: auto;
+            width: 90%;
+            max-width: 500px;
+        }
+    }
+
+    .hero-heading {
+        .red {
+            color: $brand-red !important;
+        }
+        .underline {
+            border-bottom: 8px solid $brand-red;
+        }
+    }
+}

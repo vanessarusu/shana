@@ -1,0 +1,39 @@
+#footer {
+    .line {
+        width: 26px;
+        max-height: 1px;
+        background: white;
+        display: inline-block;
+        transform: translateY(12px);
+        color: transparent;
+        margin: 0 20px;
+    }
+}
+
+#footerMenu {
+
+    .btn-red {
+        a {
+            margin: 0;
+            transition: all 0.2s ease-in-out;
+            background: $brand-red;
+            padding: 22px 52px;
+            border-radius: 3px;
+
+            @media (max-width: $small-desktop) {
+                padding: 16px 26px;
+            }
+
+            @media (max-width: 1040px) {
+                padding: 0;
+            }
+            
+
+            &:hover {
+                @media (min-width: $small-desktop) {
+                    background: $brand-blue;
+                }
+            }
+        }
+    }
+}

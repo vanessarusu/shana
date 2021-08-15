@@ -1,0 +1,49 @@
+
+#mainNavigation {
+    @media (max-width: 1500px) {
+        .fl-menu-mobile-toggle {
+            transition: all 0.2s ease-in-out;
+        }
+        .fl-menu-mobile-flyout {
+            background: $brand-navy;
+            background: white;
+            border: none;
+            box-shadow: 0 0 30px rgba(0,0,0,0.2);
+
+            ul {
+                margin-top: 120px;
+            }
+            li {
+                &.current-menu-item a {
+                    background: transparent;
+                    color: $brand-red;
+                }
+            }
+
+            li a {
+                color: $brand-navy;
+                &:hover {
+                    background: transparent;
+                }
+            }
+
+            .fl-menu-mobile-close {
+                position:absolute;
+                right: 40px;
+                top: 60px;
+                i {
+                    color: $brand-navy;
+                }
+                &:hover, &:focus {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+#mainNavigation {
+    nav ul li:last-of-type a {
+        padding-right: 0;
+    }
+}

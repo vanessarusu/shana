@@ -1,0 +1,64 @@
+$brandon: brandon-grotesque, sans-serif;
+$nunito: 'Nunito Sans', sans-serif;
+
+html, body, div, p, span, li, a {
+    font-family: $nunito;
+    font-weight: 300;
+    letter-spacing: 0.3px;
+}
+
+h1, h2, h3, h4, h5, h6,
+h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
+    font-family: $brandon;
+    font-weight: 300;
+}
+
+.inline-list {
+    .fl-list {
+        display: flex;
+    }
+
+    .fl-list-item {
+        border-right: 1px solid #111;
+        flex-grow: 1;
+
+        &:last-of-type {
+            border-right: none;
+        }
+    }
+}
+
+.sidebar-list li {
+    font-family: $brandon;
+    list-style: none;
+    margin-bottom: 10px;
+
+    &::before {
+        content: "\2022";
+        color: var(--brand-dusty-blue);
+        font-weight: bold; 
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+      }
+}
+
+a {
+    transition: all 0.2s ease-in-out;
+}
+
+.testimonial-title {
+    font-family: $brandon;
+}
+
+.bold span {
+    font-weight: bold;
+}
+
+
+.heading-font {
+    font-family: $brandon;
+    .bold, &.bold {
+        font-weight: bold;
+    }
+}

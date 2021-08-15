@@ -1,0 +1,94 @@
+#customContactForm {
+    input, textarea {
+        border: none;
+        margin-bottom: 28px;
+        transition: all 0.1s ease-in-out;
+        border-radius: 3px;
+        border: 2px solid white;
+
+        &:focus {
+            border: 2px solid $brand-navy;
+        }
+        &.wpforms-error {
+            border-color: $brand-red;
+        }
+    }
+
+    input {
+        height: 50px;
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        
+    }
+
+    textarea {
+        height: 145px;
+        padding-top: 16px;
+    }
+
+    label {
+        font-size: 16px;
+        font-family: $brandon;
+        font-weight: 400;
+        color: $brand-navy;
+        padding-bottom: 8px;
+        display: block;
+    }
+
+    button {
+        padding: 20px;
+        width: 100%;
+        display: block;
+        border: none;
+        background: $brand-red;
+        color: #fff;
+        border-radius: 3px;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+            background: $brand-blue;
+        }
+    }
+    .wpforms-required-label {
+        color: $brand-navy;
+    }
+
+    .wpforms-error {
+        color: $brand-red;
+        margin-top: -10px;
+    }
+}
+
+#contactContainer {
+    overflow: hidden;
+
+    .fl-node-611038f2be583 {
+        position: relative;
+        max-width: 100%;
+        z-index: 100;
+    }
+}
+
+.contact-background-gradient {
+    position: absolute;
+    top: 0;
+    right: -60px;
+    left: -60px;
+    bottom: -60px;
+    min-width: 100vw;
+    z-index: 0;
+
+    img {
+        width: 100vw !important;
+        min-height: 120vh !important;
+
+        @media (max-width: 1500px) {
+            min-height: 160vh !important;
+        }
+
+        @media (max-width: 1024px) {
+            min-height: 200vh !important;
+        }
+    }
+}

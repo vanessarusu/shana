@@ -1,0 +1,16 @@
+@mixin btn-secondary() {
+    color: $brand-navy;
+        font-size: 18px;
+        
+        @media (max-width: 1024px) {
+            font-size: 14px;
+        }
+
+    border-bottom: 2px solid $brand-red;
+    padding-bottom: 12px;
+
+    &:hover {
+        color: $brand-blue;
+        text-decoration: none;
+    }
+}

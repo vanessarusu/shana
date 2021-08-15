@@ -1,0 +1,21 @@
+:root {
+    --brand-red: #ed2939;
+    --brand-navy: #001b49;
+    --brand-blue: #0073cf;
+    --brand-black: #111111;
+    --brand-dusty-blue: #C0D1F0;
+}
+
+$brand-red: #ed2939;
+$brand-navy: #001b49;
+$brand-blue: #0073cf;
+$brand-black: #111111;
+$brand-dusty-blue: #C0D1F0;
+
+.red {
+    color: $brand-red;
+}
+
+.blue {
+    color: $brand-blue;
+}
