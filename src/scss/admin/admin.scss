@@ -1,28 +1,28 @@
-@import '../components/colorswatch';
+@import "../components/colorswatch";
 
 body.login {
-    background: #fff;
+  background: #fff;
 
-    #login {
-        width: 400px;
-    }
+  #login {
+    width: 600px;
+  }
 
-    form {
-        box-shadow: none;
-        border: none;
-        
-        input[type=text],
-        input[type=password] {
-            color: $brand-navy;
-        }
-    }
+  form {
+    box-shadow: none;
+    border: none;
 
-    &.wp-core-ui .button-primary {
-        background: $brand-blue;
-        border: none;
-        padding: 0.5rem;
-        outline: none;
-        display: block;
-        width: 110px;
+    input[type="text"],
+    input[type="password"] {
+      color: $brand-navy;
     }
+  }
+
+  &.wp-core-ui .button-primary {
+    background: $brand-blue;
+    border: none;
+    padding: 0.5rem;
+    outline: none;
+    display: block;
+    width: 110px;
+  }
 }

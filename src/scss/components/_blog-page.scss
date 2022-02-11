@@ -1,59 +1,63 @@
 .fl-post-grid-post {
-    border: none;
-    box-shadow: 0px 3px 6px #00000014;
-    position: relative;
+  border: none;
+  box-shadow: 0px 3px 6px #00000014;
+  position: relative;
 
-    .image-container {
-        height: 270px;
-        overflow: hidden;
+  .image-container {
+    height: 270px;
+    overflow: hidden;
 
-        img {
-            height: 270px;
-            object-fit: cover;
-        }
+    img {
+      height: 270px;
+      object-fit: cover;
     }
+  }
 }
 
 .fl-post-text {
-    padding: 52px 40px 62px;
-    margin-bottom: 52px;
+  padding: 52px 40px 62px;
+  margin-bottom: 52px;
 
-    .blog-post-meta {
-        font-size: 14px;
-        width: 100%;
-    }
-    .blog-post-title {
-        width: 100%;        
-    }
+  .blog-post-meta {
+    font-size: 14px;
+    width: 100%;
+  }
+  .blog-post-title {
+    width: 100%;
+  }
 
-    .blog-post-title a {
-        font-size: 22px;
-        line-height: 32px;
+  .blog-post-title a {
+    font-size: 22px;
+    line-height: 32px;
 
-        @media (max-width: 1024px) {
-            font-size: 18px;
-            line-height: 26px;
-        }
-        
-        display: block;
-        font-family: $brandon;
-        color: $brand-black;
+    @media (max-width: 1024px) {
+      font-size: 18px;
+      line-height: 26px;
     }
 
-    .read-more-link {
-        position: absolute;
-        bottom: 50px;
-        margin-bottom: auto;
-    }
+    display: block;
+    font-family: $brandon;
+    color: $brand-black;
+  }
 
-    .read-more-link a {
-        margin-top: 16px;
-        @include btn-secondary();
-    }
+  .read-more-link {
+    position: absolute;
+    bottom: 50px;
+    margin-bottom: auto;
+  }
+
+  .read-more-link a {
+    margin-top: 16px;
+    @include btn-secondary();
+  }
+}
+
+.navigation.post-navigation .nav-links {
+  gap: 120px;
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-    .fl-post-grid-post .image-container img {
-        min-height: auto;
-    }
+  .fl-post-grid-post .image-container img {
+    min-height: auto;
+  }
 }
