@@ -4,7 +4,7 @@ body.login {
   background: #fff;
 
   #login {
-    width: 600px;
+    width: 450px;
   }
 
   form {
@@ -25,4 +25,9 @@ body.login {
     display: block;
     width: 110px;
   }
+}
+
+#login h1 a,
+.login h1 a {
+  background-size: 100%;
 }
